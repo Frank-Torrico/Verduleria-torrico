@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    margin-top: -100px;
+    padding: 1rem 30rem;
+}
+body {
+    padding-top: 100px;
+}
+.nav__list{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+.nav__list__link{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.header__img{
+    height: 100px;
+}
+.nav__list a:hover{
+    color: rgb(229, 183, 56);
+}
+.contenedor {
+    display: grid;
+    width: 100%;
+    background-image:url(../img/foto-arriba.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-areas: 
+    "titulo1 ."
+    "subtitulo .";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2 1fr);
+    height: 250px;
+
+}
+.titulo1 {
+    grid-area: titulo1;
+    font-size: 5em;
+    text-align: end;
+    padding-top: 6rem;
+}
+.subtitulo {
+    grid-area: subtitulo;
+    text-align: end;
+    font-size: 2.5em;
+    padding-bottom: 7rem;
+    color:rgb(211, 139, 25) ;
+
+}
+.section2{
+    display: grid;
+    margin: auto;
+    max-width: 1200px;
+    grid-template-areas: 
+    "subtitulo img"
+    "texto img";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2 1fr);
+    gap: 20px;
+    margin-top: 3rem;
+}
+.subsubtitulo{
+    grid-area: subtitulo;
+    font-size: 3em;
+    padding-top: 4rem;
+    ;
+}
+.main_parrafo{
+    grid-area: texto;
+    font-size: 1.5em;
+
+}
+.p__img{
+    grid-area: img;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    gap: 40px;
+    margin-top: 3rem;
+}
+footer a{
+    color:white;
+
+}
+footer li{
+    list-style-type: none;
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(229, 183, 56);
+}
+footer h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
