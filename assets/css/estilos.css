@@ -20,11 +20,15 @@ header{
 }
 body {
     padding-top: 100px;
+    background-image: radial-gradient(
+        circle, white , rgb(194, 191, 191)
+    );
 }
 .nav__list{
     list-style-type: none;
     display: flex;
     gap: 50px;
+    position:relative;
 }
 .nav__list__link{
     text-decoration: none;
@@ -39,6 +43,7 @@ body {
 }
 .nav__list a:hover{
     color: rgb(229, 183, 56);
+    transition: all 0.2s;
 }
 .contenedor {
     display: grid;
@@ -57,14 +62,15 @@ body {
 .titulo1 {
     grid-area: titulo1;
     font-size: 5em;
-    padding-top: 7rem;
-    transition: padding 1s;
+    transform: translatey(60px);
+    transition: all 1s;
 }
 .subtitulo {
     grid-area: subtitulo;
     font-size: 2.5em;
-    padding-bottom: 7rem;
+    transform: translate(16px, -10px);
     color:rgb(211, 139, 25) ;
+    transition: transform 1s;
 
 }
 .section2{
@@ -106,16 +112,33 @@ footer{
 }
 footer a{
     color:white;
-
-}
-footer li{
     list-style-type: none;
     text-decoration: none;
 }
 footer a:hover {
     color: rgb(229, 183, 56);
+    
 }
 footer h4 {
     color: rgb(255, 255, 255);
     font-weight: 400;
+}
+
+.negrita {
+    animation: cambiocolor 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiocolor{
+    0% {
+        color: red;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: blueviolet;
+    }
+    75%{
+        color: aqua;
+    }
 }
