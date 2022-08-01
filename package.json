@@ -1,0 +1,25 @@
+{
+  "name": "verduleria-torrico",
+  "version": "1.0.0",
+  "description": "Proyecto personal para Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss ./assets/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frank-Torrico/Verduleria-torrico.git"
+  },
+  "author": "Frank Torrico",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Frank-Torrico/Verduleria-torrico/issues"
+  },
+  "homepage": "https://github.com/Frank-Torrico/Verduleria-torrico#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
