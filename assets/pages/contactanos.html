@@ -8,6 +8,7 @@
     <meta name="description" content="Pagina de contacto de Verdulería Torrico, dejanos tus datos y nosotros te contactaremos a la brevedad.">
     <title>Página de Contacto</title>
     <link rel="icon" href="../img/logo.ico">
+    <script src="https://kit.fontawesome.com/4ef35dd0e9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
@@ -20,6 +21,10 @@
                 <img class="header__img" src="../img/logo-web.png" alt="">
             </a>
         </picture>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul class="nav__list">
                 <li >
@@ -37,44 +42,50 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <form action="" method="get">
+    <main class="body1">
+        <form  action="" method="get">
             <fieldset class="formulario">
                 <legend class="titulo-formulario">Contactanos</legend>
-                <div class="categoria-formulario">Sexo:</div>
-                <label for="Sexo">Hombre</label>
-                <input type="radio" name="Sexo" value="Hombre">
-                <label for="Sexo">Mujer</label>
-                <input type="radio" name="Sexo" value="Mujer">
-                <label for="Sexo">No binario</label>
-                <input type="radio" name="Sexo" value="no-binario">
-                <div class="categoria-formulario">
+                <div class="categoria-formulario1">Sexo:</div>
+                <div  class="sub-categoria1">
+                    <label  for="sexo">Hombre</label>
+                    <input class="radio1" type="radio" name="Sexo" id="sexo" value="Hombre">
+                </div>
+                <div  class="sub-categoria2">
+                    <label for="Sexo">Mujer</label>
+                    <input class="radio2" type="radio" id="Sexo" name="Sexo" value="Mujer">
+                </div>
+                <div class="sub-categoria3">
+                    <label for="sexoo">No binario</label>
+                    <input class="radio3" type="radio" name="Sexo" id="sexoo" value="no-binario">
+                </div>
+                <div class="categoria-formulario2">
                     <label for="name">Nombre/s:</label>
                     <input type="text" id="name">
                 </div>
-                <div class="categoria-formulario">
+                <div class="categoria-formulario3">
                     <label for="surname">Apellido/s:</label>
                     <input type="text" id="surname">
                 </div>
-                <div class="categoria-formulario">
+                <div class="categoria-formulario4">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email">
                 </div>
-                <div class="categoria-formulario">
+                <div class="categoria-formulario5">
                     <label for="city">Ciudad:</label>
                     <select name="city" id="city">
                         <option value="moreno">Moreno</option>
                         <option value="paso-del-rey">Paso del Rey</option>
                     </select>
                 </div>
-                <div class="categoria-formulario">
+                <div class="categoria-formulario6">
                     <label for="message">Dejanos tu mensaje:</label>
                     <input type="text" class="mensaje-formulario" id="message" placeholder="Escribe aquí ">
                 </div>
-                <div>
+                <div class="categoria-formulario7">
                     <input type="reset" value="Borrar">
                 </div>
-                <div>
+                <div class="categoria-formulario8">
                     <input type="submit">
                 </div>
             </fieldset>
