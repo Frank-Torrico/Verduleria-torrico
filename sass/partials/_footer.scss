@@ -20,3 +20,14 @@ footer h4 {
     color: rgb(255, 255, 255);
     font-weight: 400;
     }
+
+/* MEDIAS QUERIES */
+
+@media (max-width: 576px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        min-width: 100%;
+    }
+}
