@@ -578,6 +578,7 @@ footer h4 {
 
 /* MEDIAS */
 @media (max-width: 576px){
+    /*
     .formulario{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 1fr) ;
@@ -658,6 +659,8 @@ footer h4 {
     #check:checked ~ ul{
         left: 0;
     }
+
+    */
     .section_tienda{
         display: grid;
         grid-template-rows: 60px repeat(5, 1fr);
@@ -717,7 +720,7 @@ footer h4 {
         grid-row: 6/7;
         padding: 20px;
     }
-
+/*
     .contenedor{
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -778,11 +781,12 @@ footer h4 {
         max-width: 90%;
         margin: auto;
     }
+    /*
     footer{
         display: flex;
         flex-direction: column;
         height: 100px;
-    }
+    }*/
 }
 @media (min-width: 577px) and (max-width: 768px){
     .checkbtn{
